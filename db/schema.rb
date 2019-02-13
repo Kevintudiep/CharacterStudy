@@ -10,6 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_02_13_024358) do
+
+  create_table "characters", force: :cascade do |t|
+    t.string "symbol"
+    t.string "english_translation"
+    t.string "onyomi"
+    t.string "kunyomi"
+    t.text "information"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
