@@ -1,0 +1,2 @@
+class KatakanaController < ApplicationController
+end

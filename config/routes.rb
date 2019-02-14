@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: 'home#index'
   resources :hiragana, only: [:index, :show]
   resources :home, only: [:index]
+  resources :katakana, only: [:index, :show]
 end
